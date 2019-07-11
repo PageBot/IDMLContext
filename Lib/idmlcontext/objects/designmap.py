@@ -385,43 +385,287 @@ class DesignMap(IdmlNode):
                     IncludeDelimiter=False)),
             ]
         ))
+        self.nodes.append(CrossReferenceFormat(attributes=dict(
+            Self="ue6",
+            Name="Paragraph Text &amp; Page Number",
+            AppliedCharacterStyle="n",
+            ),
+            nodes=[
+                BuildingBlock(attributes=dict(
+                    Self="ue6BuildingBlock0",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot;",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue6BuildingBlock1",
+                    BlockType="ParagraphTextBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue6BuildingBlock2",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot; on page ",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue6BuildingBlock3",
+                    BlockType="PageNumberBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+            ]
+        ))
+        self.nodes.append(CrossReferenceFormat(attributes=dict(
+            Self="ue7",
+            Name="Paragraph Text",
+            AppliedCharacterStyle="n",
+            ),
+            nodes=[
+                BuildingBlock(attributes=dict(
+                    Self="ue7BuildingBlock0",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot;",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue7BuildingBlock1",
+                    BlockType="ParagraphTextBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue7BuildingBlock2",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot;",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+            ]
+        ))
+        self.nodes.append(CrossReferenceFormat(attributes=dict(
+            Self="ue8",
+            Name="Paragraph Number &amp; Page Number",
+            AppliedCharacterStyle="n",
+            ),
+            nodes=[
+                BuildingBlock(attributes=dict(
+                    Self="ue8BuildingBlock0",
+                    BlockType="ParagraphNumberBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue8BuildingBlock1",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText=" on page ",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue8BuildingBlock2",
+                    BlockType="PageNumberBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+            ]
+        ))
+        self.nodes.append(CrossReferenceFormat(attributes=dict(
+            Self="ue9",
+            Name="Paragraph Number",
+            AppliedCharacterStyle="n",
+            ),
+            nodes=[
+                BuildingBlock(attributes=dict(
+                    Self="ue9BuildingBlock0",
+                    BlockType="ParagraphNumberBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+            ]
+        ))
+        self.nodes.append(CrossReferenceFormat(attributes=dict(
+            Self="uea",
+            Name="Text Anchor Name &amp; Page Number",
+            AppliedCharacterStyle="n",
+            ),
+            nodes=[
+                BuildingBlock(attributes=dict(
+                    Self="ueaBuildingBlock0",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot;",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ueaBuildingBlock1",
+                    BlockType="BookmarkNameBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ueaBuildingBlock2",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot; on page ",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ueaBuildingBlock3",
+                    BlockType="PageNumberBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+            ]
+        ))
+        self.nodes.append(CrossReferenceFormat(attributes=dict(
+            Self="ueb",
+            Name="Text Anchor Name",
+            AppliedCharacterStyle="n",
+            ),
+            nodes=[
+                BuildingBlock(attributes=dict(
+                    Self="uebBuildingBlock0",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot;",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="uebBuildingBlock1",
+                    BlockType="BookmarkNameBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="uebBuildingBlock2",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot;",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+            ]
+        ))
+        self.nodes.append(CrossReferenceFormat(attributes=dict(
+            Self="uec",
+            Name="Page Number",
+            AppliedCharacterStyle="n",
+            ),
+            nodes=[
+                BuildingBlock(attributes=dict(
+                    Self="uecBuildingBlock0",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="page ",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="uecBuildingBlock1",
+                    BlockType="PageNumberBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+            ]
+        ))
+        self.nodes.append(idPkg_BackingStory(attributes=dict(src='XML/BackingStory.xml')))
+        self.nodes.append(IndexingSortOption(attributes=dict(
+            Self="dIndexingSortOptionnkIndexGroup_Symbol",
+            Name="$ID/kIndexGroup_Symbol",
+            Include=True,
+            Priority=0,
+            HeaderType="Nothing")))
+        self.nodes.append(IndexingSortOption(attributes=dict(
+            Self="dIndexingSortOptionnkIndexGroup_Alphabet",
+            Name="$ID/kIndexGroup_Alphabet",
+            Include=True,
+            Priority=1,
+            HeaderType="BasicLatin")))
+        self.nodes.append(IndexingSortOption(attributes=dict(
+            Self="dIndexingSortOptionnkIndexGroup_Numeric",
+            Name="$ID/kIndexGroup_Numeric",
+            Include=False,
+            Priority=2,
+            HeaderType="Nothing")))
+        self.nodes.append(IndexingSortOption(attributes=dict(
+            Self="dIndexingSortOptionnkWRIndexGroup_GreekAlphabet",
+            Name="$ID/kWRIndexGroup_GreekAlphabet",
+            Include=False,
+            Priority=3,
+            HeaderType="Nothing")))
+        self.nodes.append(IndexingSortOption(attributes=dict(
+            Self="dIndexingSortOptionnkWRIndexGroup_CyrillicAlphabet",
+            Name="$ID/kWRIndexGroup_CyrillicAlphabet",
+            Include=False,
+            Priority=4,
+            HeaderType="Russian")))
         """
-    <CrossReferenceFormat Self="ue6" Name="Paragraph Text &amp; Page Number" AppliedCharacterStyle="n">
-        <BuildingBlock Self="ue6BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ue6BuildingBlock1" BlockType="ParagraphTextBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ue6BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ue6BuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-    </CrossReferenceFormat>
-    <CrossReferenceFormat Self="ue7" Name="Paragraph Text" AppliedCharacterStyle="n">
-        <BuildingBlock Self="ue7BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ue7BuildingBlock1" BlockType="ParagraphTextBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ue7BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-    </CrossReferenceFormat>
-    <CrossReferenceFormat Self="ue8" Name="Paragraph Number &amp; Page Number" AppliedCharacterStyle="n">
-        <BuildingBlock Self="ue8BuildingBlock0" BlockType="ParagraphNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ue8BuildingBlock1" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText=" on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ue8BuildingBlock2" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-    </CrossReferenceFormat>
-    <CrossReferenceFormat Self="ue9" Name="Paragraph Number" AppliedCharacterStyle="n">
-        <BuildingBlock Self="ue9BuildingBlock0" BlockType="ParagraphNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-    </CrossReferenceFormat>
-    <CrossReferenceFormat Self="uea" Name="Text Anchor Name &amp; Page Number" AppliedCharacterStyle="n">
-        <BuildingBlock Self="ueaBuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ueaBuildingBlock1" BlockType="BookmarkNameBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ueaBuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="ueaBuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-    </CrossReferenceFormat>
-    <CrossReferenceFormat Self="ueb" Name="Text Anchor Name" AppliedCharacterStyle="n">
-        <BuildingBlock Self="uebBuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="uebBuildingBlock1" BlockType="BookmarkNameBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="uebBuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-    </CrossReferenceFormat>
-    <CrossReferenceFormat Self="uec" Name="Page Number" AppliedCharacterStyle="n">
-        <BuildingBlock Self="uecBuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-        <BuildingBlock Self="uecBuildingBlock1" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
-    </CrossReferenceFormat>
-
-        """
+    <IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Kana" Name="$ID/kIndexGroup_Kana" Include="false" Priority="5" HeaderType="HiraganaAll" />
+    <IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Chinese" Name="$ID/kIndexGroup_Chinese" Include="false" Priority="6" HeaderType="ChinesePinyin" />
+    <IndexingSortOption Self="dIndexingSortOptionnkIndexGroup_Korean" Name="$ID/kIndexGroup_Korean" Include="false" Priority="7" HeaderType="KoreanConsonant" />
+    <IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_ArabicAlphabet" Name="$ID/kWRIndexGroup_ArabicAlphabet" Include="false" Priority="8" HeaderType="Nothing" />
+    <IndexingSortOption Self="dIndexingSortOptionnkWRIndexGroup_HebrewAlphabet" Name="$ID/kWRIndexGroup_HebrewAlphabet" Include="false" Priority="9" HeaderType="Nothing" />
+    <ColorGroup Self="ColorGroup/[Root Color Group]" Name="[Root Color Group]" IsRootColorGroup="true">
+        <ColorGroupSwatch Self="u12ColorGroupSwatch0" SwatchItemRef="Swatch/None" />
+        <ColorGroupSwatch Self="u12ColorGroupSwatch1" SwatchItemRef="Color/Registration" />
+        <ColorGroupSwatch Self="u12ColorGroupSwatch2" SwatchItemRef="Color/Paper" />
+        <ColorGroupSwatch Self="u12ColorGroupSwatch3" SwatchItemRef="Color/Black" />
+        <ColorGroupSwatch Self="u12ColorGroupSwatch4" SwatchItemRef="Color/C=0 M=0 Y=100 K=0" />
+        <ColorGroupSwatch Self="u12ColorGroupSwatch5" SwatchItemRef="Color/C=0 M=100 Y=0 K=0" />
+        <ColorGroupSwatch Self="u12ColorGroupSwatch6" SwatchItemRef="Color/C=100 M=0 Y=0 K=0" />
+        <ColorGroupSwatch Self="u12ColorGroupSwatch7" SwatchItemRef="Color/C=100 M=90 Y=10 K=0" />
+        <ColorGroupSwatch Self="u12ColorGroupSwatch8" SwatchItemRef="Color/C=15 M=100 Y=100 K=0" />
+        <ColorGroupSwatch Self="u12ColorGroupSwatch9" SwatchItemRef="Color/C=75 M=5 Y=100 K=0" />
+    </ColorGroup>
+    <ABullet Self="dABullet0" CharacterType="UnicodeOnly" CharacterValue="8226">
+        <Properties>
+            <BulletsFont type="string">$ID/</BulletsFont>
+            <BulletsFontStyle type="string">$ID/</BulletsFontStyle>
+        </Properties>
+    </ABullet>
+    <ABullet Self="dABullet1" CharacterType="UnicodeOnly" CharacterValue="42">
+        <Properties>
+            <BulletsFont type="string">$ID/</BulletsFont>
+            <BulletsFontStyle type="string">$ID/</BulletsFontStyle>
+        </Properties>
+    </ABullet>
+    <ABullet Self="dABullet2" CharacterType="UnicodeOnly" CharacterValue="9674">
+        <Properties>
+            <BulletsFont type="string">$ID/</BulletsFont>
+            <BulletsFontStyle type="string">$ID/</BulletsFontStyle>
+        </Properties>
+    </ABullet>
+    <ABullet Self="dABullet3" CharacterType="UnicodeWithFont" CharacterValue="187">
+        <Properties>
+            <BulletsFont type="string">Myriad Pro</BulletsFont>
+            <BulletsFontStyle type="string">$ID/Regular</BulletsFontStyle>
+        </Properties>
+    </ABullet>
+    <ABullet Self="dABullet4" CharacterType="GlyphWithFont" CharacterValue="503">
+        <Properties>
+            <BulletsFont type="string">Minion Pro</BulletsFont>
+            <BulletsFontStyle type="string">$ID/Regular</BulletsFontStyle>
+        </Properties>
+    </ABullet>
+    <Assignment Self="uc0" Name="$ID/UnassignedInCopy" UserName="$ID/" ExportOptions="AssignedSpreads" IncludeLinksWhenPackage="true" FilePath="$ID/">
+        <Properties>
+            <FrameColor type="enumeration">Nothing</FrameColor>
+        </Properties>
+    </Assignment>
+    """
 if __name__ == '__main__':
     import doctest
     import sys

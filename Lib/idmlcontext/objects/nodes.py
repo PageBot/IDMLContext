@@ -141,6 +141,9 @@ class idPkg_MasterSpread(IdmlNode):
 class idPkg_Spread(IdmlNode):
     TAG = 'idPkg:Spread'
 
+class idPkg_BackingStory(IdmlNode):
+    TAG = 'idPkg:BackingStory'
+
 class NumberingList(IdmlNode):
     pass
 
@@ -216,7 +219,11 @@ class CrossReferenceFormat(IdmlNode):
 class BuildingBlock(IdmlNode):
     pass
 
-    
+class IndexingSortOption(IdmlNode):
+    pass
+
+
+
 class IdmlValueNode(IdmlNode):
     def writeXml(self, f, tab=0):
         f.write(('\t'*tab) + '<%s type="%s">%s</%s>\n' % (
@@ -259,6 +266,11 @@ NODE_CLASSES = {
     'idPkg:Graphic': idPkg_Graphic,
     'idPkg:Fonts': idPkg_Fonts,
     'idPkg:Styles': idPkg_Styles,
+    'idPkg:Preferences': idPkg_Preferences,
+    'idPkg:Tags': idPkg_Tags,
+    'idPkg:MasterSpread': idPkg_MasterSpread,
+    'idPkg:Spread': idPkg_Spread,
+    'idPkg:BackingStory': idPkg_BackingStory,
     'NumberingList': NumberingList,
     'NamedGrid': NamedGrid,
     'GridDataInformation': GridDataInformation,
@@ -292,6 +304,7 @@ NODE_CLASSES = {
     'UserColor': UserColor,
     'CrossReferenceFormat': CrossReferenceFormat,
     'BuildingBlock': BuildingBlock,
+    'IndexingSortOption': IndexingSortOption,
 }
 
 if __name__ == '__main__':
