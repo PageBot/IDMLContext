@@ -206,28 +206,109 @@ class DesignMap(IdmlNode):
                 TextAfter="",
             ))]
         ))
-        """
-    <TextVariable Self="dTextVariablenFile Name" Name="File Name" VariableType="FileNameType">
-        <FileNameVariablePreference TextBefore="" IncludePath="false" IncludeExtension="false" TextAfter="" />
-    </TextVariable>
-    <TextVariable Self="dTextVariablenImage Name" Name="Image Name" VariableType="LiveCaptionType">
-        <CaptionMetadataVariablePreference TextBefore="" MetadataProviderName="$ID/#LinkInfoNameStr" TextAfter="" />
-    </TextVariable>
-    <TextVariable Self="dTextVariablenLast Page Number" Name="Last Page Number" VariableType="LastPageNumberType">
-        <PageNumberVariablePreference TextBefore="" Format="Current" TextAfter="" Scope="SectionScope" />
-    </TextVariable>
-    <TextVariable Self="dTextVariablenModification Date" Name="Modification Date" VariableType="ModificationDateType">
-        <DateVariablePreference TextBefore="" Format="MMMM d, yyyy h:mm aa" TextAfter="" />
-    </TextVariable>
-    <TextVariable Self="dTextVariablenOutput Date" Name="Output Date" VariableType="OutputDateType">
-        <DateVariablePreference TextBefore="" Format="MM/dd/yy" TextAfter="" />
-    </TextVariable>
-    <TextVariable Self="dTextVariablenRunning Header" Name="Running Header" VariableType="MatchParagraphStyleType">
-        <MatchParagraphStylePreference TextBefore="" TextAfter="" AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle" SearchStrategy="FirstOnPage" ChangeCase="None" DeleteEndPunctuation="false" />
-    </TextVariable>
-        """
+        self.nodes.append(TextVariable(attributes=dict(
+            Self="dTextVariablenFile Name",
+            Name="File Name",
+            VariableType="FileNameType",
+            ),
+            nodes=[FileNameVariablePreference(attributes=dict(
+                TextBefore="",
+                IncludePath=False,
+                IncludeExtension=False,
+                TextAfter=""
+            ))]
+        ))
+        self.nodes.append(TextVariable(attributes=dict(
+            Self="dTextVariablenImage Name",
+            Name="Image Name",
+            VariableType="LiveCaptionType",
+            ),
+            nodes=[CaptionMetadataVariablePreference(attributes=dict(
+                TextBefore="",
+                MetadataProviderName="$ID/#LinkInfoNameStr",
+                TextAfter="" 
+            ))]
+        ))
+        self.nodes.append(TextVariable(attributes=dict(
+            Self="dTextVariablenLast Page Number",
+            Name="Last Page Number",
+            VariableType="LastPageNumberType",
+            ),
+            nodes=[PageNumberVariablePreference(attributes=dict(
+                TextBefore="",
+                Format="Current",
+                TextAfter="",
+                Scope="SectionScope",
+            ))]
+        ))
+        self.nodes.append(TextVariable(attributes=dict(
+            Self="dTextVariablenModification Date",
+            Name="Modification Date",
+            VariableType="ModificationDateType",
+            ),
+            nodes=[DateVariablePreference(attributes=dict(
+                TextBefore="",
+                Format="MMMM d, yyyy h:mm aa",
+                TextAfter="",
+            ))]
+        ))
+        self.nodes.append(TextVariable(attributes=dict(
+            Self="dTextVariablenOutput Date",
+            Name="Output Date",
+            VariableType="OutputDateType",
+            ),
+            nodes=[DateVariablePreference(attributes=dict(
+                TextBefore="",
+                Format="MM/dd/yy",
+                TextAfter="",
+            ))]
+        ))
+        self.nodes.append(TextVariable(attributes=dict(
+            Self="dTextVariablenRunning Header",
+            Name="Running Header",
+            VariableType="MatchParagraphStyleType",
+            ),
+            nodes=[MatchParagraphStylePreference(attributes=dict(
+                TextBefore="",
+                TextAfter="",
+                AppliedParagraphStyle="ParagraphStyle/$ID/NormalParagraphStyle",
+                SearchStrategy="FirstOnPage",
+                ChangeCase="None",
+                DeleteEndPunctuation=False,
+            ))]
+        ))
         self.nodes.append(idPkg_Tags(attributes=dict(src="XML/Tags.xml")))
+        self.nodes.append(Layer(attributes=dict(
+            Self="ub1",
+            Name="Layer 1",
+            Visible=True,
+            Locked=False,
+            IgnoreWrap=False,
+            ShowGuides=True,
+            LockGuides=False,
+            UI=True,
+            Expendable=True,
+            Printable=True,
+            ),
+            nodes=[Properties(nodes=[LayerColor(attributes=dict(
+                type='enumeration', value='LightBlue'))]
+            )]
+        ))
+        self.nodes.append(idPkg_MasterSpread(attributes=dict(src='MasterSpreads/MasterSpread_ub2.xml')))
+        self.nodes.append(idPkg_Spread(attributes=dict(src='Spreads/Spread_udc.xml')))
+        """
 
+    <Section Self="uad" Length="1" Name="" ContinueNumbering="true" IncludeSectionPrefix="false" Marker="" PageStart="ue1" SectionPrefix="" AlternateLayoutLength="1" AlternateLayout="Letter V">
+        <Properties>
+            <PageNumberStyle type="enumeration">Arabic</PageNumberStyle>
+        </Properties>
+    </Section>
+    <DocumentUser Self="dDocumentUser0" UserName="$ID/Unknown User Name">
+        <Properties>
+            <UserColor type="enumeration">Gold</UserColor>
+        </Properties>
+    </DocumentUser>
+        """
 
 if __name__ == '__main__':
     import doctest

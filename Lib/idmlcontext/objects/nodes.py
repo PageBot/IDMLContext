@@ -135,6 +135,12 @@ class idPkg_Preferences(IdmlNode):
 class idPkg_Tags(IdmlNode):
     TAG = 'idPkg:Tags'
 
+class idPkg_MasterSpread(IdmlNode):
+    TAG = 'idPkg:MasterSpread'
+
+class idPkg_Spread(IdmlNode):
+    TAG = 'idPkg:Spread'
+
 class NumberingList(IdmlNode):
     pass
 
@@ -183,6 +189,21 @@ class ChapterNumberVariablePreference(IdmlNode):
 class DateVariablePreference(IdmlNode):
     pass
 
+class FileNameVariablePreference(IdmlNode):
+    pass
+
+class CaptionMetadataVariablePreference(IdmlNode):
+    pass
+
+class PageNumberVariablePreference(IdmlNode):
+    pass
+
+class MatchParagraphStylePreference(IdmlNode):
+    pass
+
+class Layer(IdmlNode):
+    pass
+
 
 class IdmlValueNode(IdmlNode):
     def writeXml(self, f, tab=0):
@@ -206,7 +227,9 @@ class ShowEndnotePrefixSuffix(IdmlValueNode):
     pass
 class WatermarkFontColor(IdmlValueNode):
     pass
-
+class LayerColor(IdmlValueNode):
+    pass
+ 
 NODE_CLASSES = {
     # Expanding set of IdmlNode classes, that know more about their
     # content so the can generate, manipulate and validate. 
@@ -242,6 +265,12 @@ NODE_CLASSES = {
     'PublishExportPreference': PublishExportPreference,
     'ChapterNumberVariablePreference': ChapterNumberVariablePreference,
     'DateVariablePreference': DateVariablePreference,
+    'FileNameVariablePreference': FileNameVariablePreference,
+    'CaptionMetadataVariablePreference': CaptionMetadataVariablePreference,
+    'PageNumberVariablePreference': PageNumberVariablePreference,
+    'MatchParagraphStylePreference': MatchParagraphStylePreference,
+    'Layer': Layer,
+    'LayerColor': LayerColor,
 }
 
 if __name__ == '__main__':
