@@ -222,6 +222,17 @@ class BuildingBlock(IdmlNode):
 class IndexingSortOption(IdmlNode):
     pass
 
+class ColorGroup(IdmlNode):
+    pass
+
+class ColorGroupSwatch(IdmlNode):
+    pass
+
+class ABullet(IdmlNode):
+    pass
+
+class Assignment(IdmlNode):
+    pass
 
 
 class IdmlValueNode(IdmlNode):
@@ -242,6 +253,8 @@ class ScopeValue(IdmlValueNode):
     pass
 class FrameCreateOption(IdmlValueNode):
     pass
+class FrameColor(IdmlValueNode):
+    pass
 class ShowEndnotePrefixSuffix(IdmlValueNode):
     pass
 class WatermarkFontColor(IdmlValueNode):
@@ -251,6 +264,10 @@ class LayerColor(IdmlValueNode):
 class PageNumberStyle(IdmlValueNode):
     pass
 class UserColor(IdmlValueNode):
+    pass
+class BulletsFont(IdmlValueNode):
+    pass
+class BulletsFontStyle(IdmlValueNode):
     pass
 
 
@@ -305,6 +322,13 @@ NODE_CLASSES = {
     'CrossReferenceFormat': CrossReferenceFormat,
     'BuildingBlock': BuildingBlock,
     'IndexingSortOption': IndexingSortOption,
+    'ColorGroup': ColorGroup,
+    'ColorGroupSwatch': ColorGroupSwatch,
+    'ABullet': ABullet,
+    'BulletsFont': BulletsFont,
+    'BulletsFontStyle': BulletsFontStyle,
+    'Assignment': Assignment,
+    'FrameColor': FrameColor,
 }
 
 if __name__ == '__main__':
