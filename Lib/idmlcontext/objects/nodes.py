@@ -204,7 +204,19 @@ class MatchParagraphStylePreference(IdmlNode):
 class Layer(IdmlNode):
     pass
 
+class Section(IdmlNode):
+    pass
 
+class DocumentUser(IdmlNode):
+    pass
+
+class CrossReferenceFormat(IdmlNode):
+    pass
+
+class BuildingBlock(IdmlNode):
+    pass
+
+    
 class IdmlValueNode(IdmlNode):
     def writeXml(self, f, tab=0):
         f.write(('\t'*tab) + '<%s type="%s">%s</%s>\n' % (
@@ -229,7 +241,12 @@ class WatermarkFontColor(IdmlValueNode):
     pass
 class LayerColor(IdmlValueNode):
     pass
- 
+class PageNumberStyle(IdmlValueNode):
+    pass
+class UserColor(IdmlValueNode):
+    pass
+
+
 NODE_CLASSES = {
     # Expanding set of IdmlNode classes, that know more about their
     # content so the can generate, manipulate and validate. 
@@ -271,6 +288,10 @@ NODE_CLASSES = {
     'MatchParagraphStylePreference': MatchParagraphStylePreference,
     'Layer': Layer,
     'LayerColor': LayerColor,
+    'PageNumberStyle': PageNumberStyle,
+    'UserColor': UserColor,
+    'CrossReferenceFormat': CrossReferenceFormat,
+    'BuildingBlock': BuildingBlock,
 }
 
 if __name__ == '__main__':

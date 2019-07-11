@@ -296,20 +296,132 @@ class DesignMap(IdmlNode):
         ))
         self.nodes.append(idPkg_MasterSpread(attributes=dict(src='MasterSpreads/MasterSpread_ub2.xml')))
         self.nodes.append(idPkg_Spread(attributes=dict(src='Spreads/Spread_udc.xml')))
+        self.nodes.append(Section(attributes=dict(
+            Self="uad",
+            Length=1,
+            Name="",
+            ContinueNumbering=True,
+            IncludeSectionPrefix=False,
+            Marker="",
+            PageStart="ue1",
+            SectionPrefix="",
+            AlternateLayoutLength=1,
+            AlternateLayout="Letter V",
+            ),
+            nodes=[Properties(nodes=[PageNumberStyle(attributes=dict(
+                type='enumeration', value='Arabic'))]
+            )]
+        ))
+        self.nodes.append(DocumentUser(attributes=dict(
+            Self="dDocumentUser0",
+            UserName="$ID/Unknown User Name",
+            ),
+            nodes=[Properties(nodes=[UserColor(attributes=dict(
+                type='enumeration', value='Gold'))]
+            )]
+        ))
+        self.nodes.append(CrossReferenceFormat(attributes=dict(
+            Self="ue4",
+            Name="Full Paragraph &amp; Page Number",
+            AppliedCharacterStyle="n",
+            ),
+            nodes=[
+                BuildingBlock(attributes=dict(
+                    Self="ue4BuildingBlock0",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot;",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue4BuildingBlock1",
+                    BlockType="FullParagraphBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue4BuildingBlock2",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot; on page ",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue4BuildingBlock3",
+                    BlockType="PageNumberBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False))
+            ]
+        ))
+        self.nodes.append(CrossReferenceFormat(attributes=dict(
+            Self="ue5",
+            Name="Full Paragraph",
+            AppliedCharacterStyle="n",
+            ),
+            nodes=[
+                BuildingBlock(attributes=dict(
+                    Self="ue5BuildingBlock0",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot;",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue5BuildingBlock1",
+                    BlockType="FullParagraphBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="$ID/",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+                BuildingBlock(attributes=dict(
+                    Self="ue5BuildingBlock2",
+                    BlockType="CustomStringBuildingBlock",
+                    AppliedCharacterStyle="n",
+                    CustomText="&quot;",
+                    AppliedDelimiter="$ID/",
+                    IncludeDelimiter=False)),
+            ]
+        ))
         """
+    <CrossReferenceFormat Self="ue6" Name="Paragraph Text &amp; Page Number" AppliedCharacterStyle="n">
+        <BuildingBlock Self="ue6BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ue6BuildingBlock1" BlockType="ParagraphTextBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ue6BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ue6BuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+    </CrossReferenceFormat>
+    <CrossReferenceFormat Self="ue7" Name="Paragraph Text" AppliedCharacterStyle="n">
+        <BuildingBlock Self="ue7BuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ue7BuildingBlock1" BlockType="ParagraphTextBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ue7BuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+    </CrossReferenceFormat>
+    <CrossReferenceFormat Self="ue8" Name="Paragraph Number &amp; Page Number" AppliedCharacterStyle="n">
+        <BuildingBlock Self="ue8BuildingBlock0" BlockType="ParagraphNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ue8BuildingBlock1" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText=" on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ue8BuildingBlock2" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+    </CrossReferenceFormat>
+    <CrossReferenceFormat Self="ue9" Name="Paragraph Number" AppliedCharacterStyle="n">
+        <BuildingBlock Self="ue9BuildingBlock0" BlockType="ParagraphNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+    </CrossReferenceFormat>
+    <CrossReferenceFormat Self="uea" Name="Text Anchor Name &amp; Page Number" AppliedCharacterStyle="n">
+        <BuildingBlock Self="ueaBuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ueaBuildingBlock1" BlockType="BookmarkNameBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ueaBuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot; on page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="ueaBuildingBlock3" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+    </CrossReferenceFormat>
+    <CrossReferenceFormat Self="ueb" Name="Text Anchor Name" AppliedCharacterStyle="n">
+        <BuildingBlock Self="uebBuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="uebBuildingBlock1" BlockType="BookmarkNameBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="uebBuildingBlock2" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="&quot;" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+    </CrossReferenceFormat>
+    <CrossReferenceFormat Self="uec" Name="Page Number" AppliedCharacterStyle="n">
+        <BuildingBlock Self="uecBuildingBlock0" BlockType="CustomStringBuildingBlock" AppliedCharacterStyle="n" CustomText="page " AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+        <BuildingBlock Self="uecBuildingBlock1" BlockType="PageNumberBuildingBlock" AppliedCharacterStyle="n" CustomText="$ID/" AppliedDelimiter="$ID/" IncludeDelimiter="false" />
+    </CrossReferenceFormat>
 
-    <Section Self="uad" Length="1" Name="" ContinueNumbering="true" IncludeSectionPrefix="false" Marker="" PageStart="ue1" SectionPrefix="" AlternateLayoutLength="1" AlternateLayout="Letter V">
-        <Properties>
-            <PageNumberStyle type="enumeration">Arabic</PageNumberStyle>
-        </Properties>
-    </Section>
-    <DocumentUser Self="dDocumentUser0" UserName="$ID/Unknown User Name">
-        <Properties>
-            <UserColor type="enumeration">Gold</UserColor>
-        </Properties>
-    </DocumentUser>
         """
-
 if __name__ == '__main__':
     import doctest
     import sys
