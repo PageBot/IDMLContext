@@ -20,8 +20,8 @@ import os, shutil
 import zipfile
 from lxml import etree
 
-from pagebot.contexts.builders.xmlbuilder import XmlBuilder
-from pagebot.contexts.builders.idml.objects.nodes import DesignMap
+from pagebot.contexts.xml.xmlbuilder import XmlBuilder
+from objects.nodes import DesignMap
 
 class IdmlBuilder(XmlBuilder):
     """TODO: Implement functions to make it work.

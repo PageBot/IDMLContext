@@ -20,16 +20,15 @@
 #     http://wwwimages.adobe.com/content/dam/acom/en/devnet/indesign/sdk/cs6/idml/idml-specification.pdf
 #     https://pypi.org/project/SimpleIDML/
 #
-from pagebot.contexts.basecontext import BaseContext
-from pagebot.contexts.builders.idml.idmlbuilder import IdmlBuilder
-from pagebot.contexts.strings.idmlstring import IdmlString
+from pagebot.contexts.base.context import BaseContext
+from idmlbuilder import IdmlBuilder
 from pagebot.constants import FILETYPE_IDML
 from pagebot.toolbox.units import pt
 
 class IdmlContext(BaseContext):
 
     # Used by the generic BaseContext.newString( )
-    STRING_CLASS = IdmlString
+    #STRING_CLASS = IdmlString
     EXPORT_TYPES = (FILETYPE_IDML,)
 
     def __init__(self):
