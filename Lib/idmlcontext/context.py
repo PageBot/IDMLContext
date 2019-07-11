@@ -14,16 +14,16 @@
 #     Supporting usage of InDesign API-scripting
 # -----------------------------------------------------------------------------
 #
-#     idmlcontext.py
+#     context.py
 #
 #     IDML file specifications here:
 #     http://wwwimages.adobe.com/content/dam/acom/en/devnet/indesign/sdk/cs6/idml/idml-specification.pdf
 #     https://pypi.org/project/SimpleIDML/
 #
 from pagebot.contexts.base.context import BaseContext
-from idmlbuilder import IdmlBuilder
 from pagebot.constants import FILETYPE_IDML
 from pagebot.toolbox.units import pt
+from idmlcontext.idmlbuilder import IdmlBuilder
 
 class IdmlContext(BaseContext):
 

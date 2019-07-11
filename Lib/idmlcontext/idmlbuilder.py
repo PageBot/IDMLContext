@@ -21,7 +21,7 @@ import zipfile
 from lxml import etree
 
 from pagebot.contexts.xml.xmlbuilder import XmlBuilder
-from objects.nodes import DesignMap
+from idmlcontext.objects.designmap import DesignMap
 
 class IdmlBuilder(XmlBuilder):
     """TODO: Implement functions to make it work.
